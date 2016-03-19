@@ -13,6 +13,7 @@
 		FD21DBD21C96B27C0028F0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD21DBD01C96B27C0028F0E5 /* Main.storyboard */; };
 		FD21DBD41C96B27C0028F0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD21DBD31C96B27C0028F0E5 /* Assets.xcassets */; };
 		FD21DBD71C96B27C0028F0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD21DBD51C96B27C0028F0E5 /* LaunchScreen.storyboard */; };
+		FD21DBE01C96BB730028F0E5 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD21DBDF1C96BB730028F0E5 /* PlayingCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FD21DBD31C96B27C0028F0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD21DBD61C96B27C0028F0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD21DBD81C96B27C0028F0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD21DBDE1C96BB730028F0E5 /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		FD21DBDF1C96BB730028F0E5 /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,10 @@
 		FD21DBC61C96B27C0028F0E5 /* SuperCard */ = {
 			isa = PBXGroup;
 			children = (
-				FD21DBCA1C96B27C0028F0E5 /* AppDelegate.h */,
-				FD21DBCB1C96B27C0028F0E5 /* AppDelegate.m */,
 				FD21DBCD1C96B27C0028F0E5 /* ViewController.h */,
 				FD21DBCE1C96B27C0028F0E5 /* ViewController.m */,
+				FD21DBDE1C96BB730028F0E5 /* PlayingCardView.h */,
+				FD21DBDF1C96BB730028F0E5 /* PlayingCardView.m */,
 				FD21DBD01C96B27C0028F0E5 /* Main.storyboard */,
 				FD21DBD31C96B27C0028F0E5 /* Assets.xcassets */,
 				FD21DBD51C96B27C0028F0E5 /* LaunchScreen.storyboard */,
@@ -74,6 +77,8 @@
 		FD21DBC71C96B27C0028F0E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD21DBCA1C96B27C0028F0E5 /* AppDelegate.h */,
+				FD21DBCB1C96B27C0028F0E5 /* AppDelegate.m */,
 				FD21DBC81C96B27C0028F0E5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD21DBCF1C96B27C0028F0E5 /* ViewController.m in Sources */,
+				FD21DBE01C96BB730028F0E5 /* PlayingCardView.m in Sources */,
 				FD21DBCC1C96B27C0028F0E5 /* AppDelegate.m in Sources */,
 				FD21DBC91C96B27C0028F0E5 /* main.m in Sources */,
 			);
@@ -298,6 +304,7 @@
 				FD21DBDD1C96B27C0028F0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
