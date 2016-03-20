@@ -50,6 +50,7 @@
 }
 
 - (void)pinch:(UIPinchGestureRecognizer *)gesture {
+    NSLog(@"pinch");
     if (gesture.state == UIGestureRecognizerStateChanged || gesture.state == UIGestureRecognizerStateEnded) {
         self.faceCardScaleFactor *= gesture.scale;
         gesture.scale = 1.0;
@@ -83,21 +84,33 @@
     [[UIColor blackColor] setStroke];
     [roundedRect stroke];
     
-    if (self.faceUp) {
-        UIImage *faceImace = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", [self rankAsString], self.suit]];
-        if (faceImace) {
-            CGRect imageRect = CGRectInset(self.bounds,
-                                           self.bounds.size.width * (1.0 - self.faceCardScaleFactor),
-                                           self.bounds.size.height * (1.0 - self.faceCardScaleFactor));
-            [faceImace drawInRect:imageRect];
-        } else {
-            [self drawPips];
-        }
-        
-        [self drawCorners];
+    UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", [self rankAsString], self.suit]];
+    NSLog(@"%@", self.suit);
+    if (faceImage) {
+        CGRect imageRect = CGRectInset(self.bounds,
+                                       self.bounds.size.width * (1.0 - self.faceCardScaleFactor),
+                                       self.bounds.size.height * (1.0 - self.faceCardScaleFactor));
+        [faceImage drawInRect:imageRect];
     } else {
-        [[UIImage imageNamed:@"card_back"] drawInRect:self.bounds];
+        [self drawPips];
     }
+
+    [self drawCorners];
+
+//    if (self.faceUp) {
+//        if (faceImage) {
+//            CGRect imageRect = CGRectInset(self.bounds,
+//                                           self.bounds.size.width * (1.0 - self.faceCardScaleFactor),
+//                                           self.bounds.size.height * (1.0 - self.faceCardScaleFactor));
+//            [faceImage drawInRect:imageRect];
+//        } else {
+//            [self drawPips];
+//        }
+//        
+//        [self drawCorners];
+//    } else {
+//        [[UIImage imageNamed:@"card_back"] drawInRect:self.bounds];
+//    }
 }
 
 - (void)drawPips {

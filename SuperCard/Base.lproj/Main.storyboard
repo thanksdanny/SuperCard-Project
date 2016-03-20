@@ -33,7 +33,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="Rgx-sq-Zb5">
                     <connections>
-                        <action selector="swipe:" destination="BYZ-38-t0r" id="GHk-jV-tjd"/>
+                        <action selector="swipe:" destination="BYZ-38-t0r" id="Ri1-Wf-Fs6"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
